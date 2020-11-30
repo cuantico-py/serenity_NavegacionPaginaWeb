@@ -18,7 +18,7 @@ public class Navegar implements Task {
         actor.attemptsTo(Click.on(TRABAJACONNOSO));
         actor.attemptsTo(Click.on(BLOG));
         actor.attemptsTo(Click.on(CONTACTENOS));
-        actor.attemptsTo(Click.on(HOME));
+       // actor.attemptsTo(Click.on(HOME));
 
     }
     public static Navegar porlapaginadecidenet(){

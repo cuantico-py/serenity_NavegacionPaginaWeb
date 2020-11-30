@@ -8,6 +8,7 @@ import drivers.DriverChrome;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
+import task.Home;
 import task.Navegar;
 
 public class CidenetStepDefinitions {
@@ -31,14 +32,12 @@ public class CidenetStepDefinitions {
         //mapeo los elementos
         actor.attemptsTo(Navegar.porlapaginadecidenet());
 
-
-
     }
 
     @When("^el usuario  va al Home$")
     public void elUsuarioVaAlHome() {
         // Write code here that turns the phrase above into concrete actions
-
+        actor.attemptsTo(Home.irahome());
     }
 
     @Then("^el usuario ve la pantalla del Home$")
